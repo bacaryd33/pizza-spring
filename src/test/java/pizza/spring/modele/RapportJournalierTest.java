@@ -5,25 +5,25 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class RapportJournalierTest {
-
-	@Test
-	public void testRapportJournalier() {
-		fail("Not yet implemented");
-	}
+	
+	private RapportJournalier rapportjournalier;
+	private Categorie categorie;
+	private long nbPizzas;
+	private long montantEncaisse;
 
 	@Test
 	public void testGetCategorie() {
-		fail("Not yet implemented");
+		assertEquals(this.categorie, this.rapportjournalier.getCategorie());
 	}
 
 	@Test
 	public void testGetMontantEncaisse() {
-		fail("Not yet implemented");
+		assertEquals(this.nbPizzas, this.rapportjournalier.getNbPizzas());
 	}
 
 	@Test
 	public void testGetNbPizzas() {
-		fail("Not yet implemented");
+		assertEquals(this.montantEncaisse, this.rapportjournalier.getMontantEncaisse());
 	}
 
 }

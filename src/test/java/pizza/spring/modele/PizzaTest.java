@@ -18,32 +18,32 @@ public class PizzaTest {
 
 	@Test
 	public void testGetId() {
-		fail("Not yet implemented");
+		assertEquals(this.id, this.pizza.getId());
 	}
 
 	@Test
 	public void testGetNom() {
-		fail("Not yet implemented");
+		assertEquals(this.nom, this.pizza.getNom());
 	}
 
 	@Test
 	public void testGetPrix() {
-		fail("Not yet implemented");
+		assertEquals(this.prix, this.pizza.getPrix());		
 	}
 
 	@Test
 	public void testIsDisponible() {
-		fail("Not yet implemented");
+		assertEquals(this.disponible, this.pizza.isDisponible());		
 	}
 
 	@Test
 	public void testGetCategorie() {
-		fail("Not yet implemented");
+		assertEquals(this.categorie, this.pizza.getCategorie());	
 	}
 
 	@Test
 	public void testGetIngredients() {
-		fail("Not yet implemented");
+		assertEquals(this.ingredients, this.pizza.getIngredients());
 	}
 
 }
