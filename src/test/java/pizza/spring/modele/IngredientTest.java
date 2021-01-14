@@ -2,6 +2,7 @@ package pizza.spring.modele;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class IngredientTest {
@@ -9,7 +10,15 @@ public class IngredientTest {
 	private Ingredient ingredient;
 	private Long id;
 	private String nom;
-
+	
+	
+	@Before
+	public void setUp() throws Exception {
+		this.id = (long)1;
+		this.nom = "Charles";
+		this.ingredient = new Ingredient();
+	}
+	
 	@Test
 	public void testGetId() {
 		assertEquals(this.id, this.ingredient.getId());

@@ -2,8 +2,10 @@ package pizza.spring.modele;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class PizzaTest {
@@ -15,6 +17,17 @@ public class PizzaTest {
 	private boolean disponible;
 	private Categorie categorie;
 	private List<Ingredient> ingredients;
+	
+	@Before
+	public void setUp() throws Exception {
+		this.id = (long)1;
+		this.nom = "Bob" ;
+		this.prix = 12;
+		this.disponible = true;
+		this.categorie = new Categorie();
+		this.ingredients = new ArrayList<>();
+		this.pizza  = new Pizza();
+	}
 
 	@Test
 	public void testGetId() {

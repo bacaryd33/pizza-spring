@@ -28,6 +28,7 @@ public class CommandeTest {
 		this.dateEmission = new Date();
 		this.enAttente = true;
 		this.details = new ArrayList<>();
+		this.commande = new Commande();
 	}
 
 	@Test
