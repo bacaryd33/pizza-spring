@@ -5,20 +5,20 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class FidelisationTest {
+	
+	private Fidelisation fidelisation;
+	private String nomClient;
+	private long nbCommandes;
 
-	@Test
-	public void testFidelisation() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetNomClient() {
-		fail("Not yet implemented");
+		assertEquals(this.nomClient, this.fidelisation.getNomClient());
 	}
 
 	@Test
 	public void testGetNbCommandes() {
-		fail("Not yet implemented");
+		assertEquals(this.nbCommandes, this.fidelisation.getNbCommandes());
 	}
 
 }

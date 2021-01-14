@@ -2,73 +2,71 @@ package pizza.spring.modele;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.junit.Before;
 import org.junit.Test;
 
 public class CommandeTest {
-
-	@Test
-	public void testGetId() {
-		fail("Not yet implemented");
+	
+	private Commande commande;
+	private Pizza pizza;
+	private Long id;
+	private String nom;
+	private String telephone;
+	private Date dateEmission;
+	private boolean enAttente;
+	private List<DetailCommande> details = new ArrayList<>();
+	
+	@Before
+	public void setUp() throws Exception {
+		this.id = (long) 1;
+		this.nom = "Jean";
+		this.telephone = "09328136132";
+		this.dateEmission = new Date();
+		this.enAttente = true;
+		this.details = new ArrayList<>();
 	}
 
 	@Test
-	public void testSetId() {
-		fail("Not yet implemented");
+	public void testGetId() {
+		assertEquals(this.id, this.commande.getId());
 	}
 
 	@Test
 	public void testGetNom() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetNom() {
-		fail("Not yet implemented");
+		assertEquals(this.nom, this.commande.getNom());
 	}
 
 	@Test
 	public void testGetTelephone() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetTelephone() {
-		fail("Not yet implemented");
+		assertEquals(this.telephone, this.commande.getTelephone());
 	}
 
 	@Test
 	public void testGetDateEmission() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetDateEmission() {
-		fail("Not yet implemented");
+		assertEquals(this.dateEmission, this.commande.getDateEmission());
 	}
 
 	@Test
 	public void testIsEnAttente() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetEnAttente() {
-		fail("Not yet implemented");
+		assertEquals(this.enAttente, this.commande.isEnAttente());
 	}
 
 	@Test
 	public void testGetDetails() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetDetails() {
-		fail("Not yet implemented");
+		assertEquals(this.details, this.commande.getDetails());
 	}
 
 	@Test
 	public void testAjouter() {
-		fail("Not yet implemented");
+		DetailCommande detailCommande = new DetailCommande();
+		detailCommande.setPizza(pizza);
+		detailCommande.setCommande(commande);
+		this.details.add(detailCommande);
+		assertEquals(this.details, this.commande.getDetails());
 	}
 
 }

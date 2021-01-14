@@ -2,28 +2,32 @@ package pizza.spring.modele;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
-public class CategorieTest {
 
-	@Test
-	public void testGetId() {
-		fail("Not yet implemented");
+
+public class CategorieTest {
+	
+	private Categorie categorie;
+	private Long id;
+	private String nom;
+	
+	@Before
+	public void setUp() throws Exception {
+		this.id = (long) 1;
+		this.nom = "base tomate";
+		this.categorie = new Categorie();
 	}
 
 	@Test
-	public void testSetId() {
-		fail("Not yet implemented");
+	public void testGetId() {
+		assertEquals(this.id, this.categorie.getId());
 	}
 
 	@Test
 	public void testGetNom() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetNom() {
-		fail("Not yet implemented");
+		assertEquals(this.nom, this.categorie.getNom());
 	}
 
 }

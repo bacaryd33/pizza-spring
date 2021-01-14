@@ -2,17 +2,22 @@ package pizza.spring.modele;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.Test;
 
 public class PizzaTest {
+	
+	private Pizza pizza;
+	private Long id;
+	private String nom;
+	private int prix;
+	private boolean disponible;
+	private Categorie categorie;
+	private List<Ingredient> ingredients;
 
 	@Test
 	public void testGetId() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetId() {
 		fail("Not yet implemented");
 	}
 
@@ -22,17 +27,7 @@ public class PizzaTest {
 	}
 
 	@Test
-	public void testSetNom() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	public void testGetPrix() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetPrix() {
 		fail("Not yet implemented");
 	}
 
@@ -42,17 +37,7 @@ public class PizzaTest {
 	}
 
 	@Test
-	public void testSetDisponible() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	public void testGetCategorie() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetCategorie() {
 		fail("Not yet implemented");
 	}
 

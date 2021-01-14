@@ -5,35 +5,25 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class DetailCommandeTest {
+	
+	private DetailCommande detailCommande;
+	private Long id;
+	private Commande commande;
+	private Pizza pizza;
 
 	@Test
 	public void testGetId() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetId() {
-		fail("Not yet implemented");
+		assertEquals(this.id, this.detailCommande.getId());
 	}
 
 	@Test
 	public void testGetCommande() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetCommande() {
-		fail("Not yet implemented");
+		assertEquals(this.commande, this.detailCommande.getCommande());
 	}
 
 	@Test
 	public void testGetPizza() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetPizza() {
-		fail("Not yet implemented");
+		assertEquals(this.pizza, this.detailCommande.getPizza());
 	}
 
 }
