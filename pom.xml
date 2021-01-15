@@ -92,5 +92,10 @@
 			<version>3.2.4</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+		    <groupId>org.jacoco</groupId>
+		    <artifactId>jacoco-maven-plugin</artifactId>
+		    <version>0.8.6</version>
+		</dependency>
 	</dependencies>
 </project>
