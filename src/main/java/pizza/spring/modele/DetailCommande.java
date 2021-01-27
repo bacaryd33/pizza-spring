@@ -9,6 +9,19 @@ import javax.persistence.ManyToOne;
 @Entity
 public class DetailCommande {
 
+	
+	
+	public DetailCommande() {
+		super();
+	}
+
+	public DetailCommande(Long id, Commande commande, Pizza pizza) {
+		super();
+		this.id = id;
+		this.commande = commande;
+		this.pizza = pizza;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

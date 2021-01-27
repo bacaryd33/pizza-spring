@@ -26,7 +26,7 @@ public class PizzaTest {
 		this.disponible = true;
 		this.categorie = new Categorie();
 		this.ingredients = new ArrayList<>();
-		this.pizza  = new Pizza();
+		this.pizza  = new Pizza(this.id, this.nom, this.prix, this.disponible, this.categorie, this.ingredients);
 	}
 
 	@Test

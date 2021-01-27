@@ -17,6 +17,23 @@ import javax.persistence.TemporalType;
 @Entity
 public class Commande {
 
+	
+	
+	public Commande() {
+		super();
+	}
+
+	public Commande(Long id, String nom, String telephone, Date dateEmission, boolean enAttente,
+			List<DetailCommande> details) {
+		super();
+		this.id = id;
+		this.nom = nom;
+		this.telephone = telephone;
+		this.dateEmission = dateEmission;
+		this.enAttente = enAttente;
+		this.details = details;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

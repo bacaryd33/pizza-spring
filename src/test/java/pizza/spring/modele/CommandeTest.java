@@ -28,7 +28,8 @@ public class CommandeTest {
 		this.dateEmission = new Date();
 		this.enAttente = true;
 		this.details = new ArrayList<>();
-		this.commande = new Commande();
+		this.commande = new Commande(this.id, this.nom, this.telephone, this.dateEmission, this.enAttente,
+				this.details);
 	}
 
 	@Test

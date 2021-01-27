@@ -7,6 +7,18 @@ import javax.persistence.Id;
 
 @Entity
 public class Categorie {
+	
+	
+	
+	public Categorie() {
+		super();
+	}
+
+	public Categorie(Long id, String nom) {
+		super();
+		this.id = id;
+		this.nom = nom;
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

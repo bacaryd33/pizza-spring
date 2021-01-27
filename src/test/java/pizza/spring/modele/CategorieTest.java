@@ -17,7 +17,7 @@ public class CategorieTest {
 	public void setUp() throws Exception {
 		this.id = (long) 1;
 		this.nom = "base tomate";
-		this.categorie = new Categorie();
+		this.categorie = new Categorie(this.id,this.nom);
 	}
 
 	@Test

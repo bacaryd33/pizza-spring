@@ -16,7 +16,7 @@ public class IngredientTest {
 	public void setUp() throws Exception {
 		this.id = (long)1;
 		this.nom = "Charles";
-		this.ingredient = new Ingredient();
+		this.ingredient = new Ingredient(this.id, this.nom);
 	}
 	
 	@Test

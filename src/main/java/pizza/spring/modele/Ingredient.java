@@ -8,6 +8,19 @@ import javax.persistence.Id;
 @Entity
 public class Ingredient {
 
+	
+	
+	
+	public Ingredient() {
+		super();
+	}
+
+	public Ingredient(Long id, String nom) {
+		super();
+		this.id = id;
+		this.nom = nom;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

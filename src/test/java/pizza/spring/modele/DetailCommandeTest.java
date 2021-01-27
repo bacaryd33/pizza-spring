@@ -21,7 +21,7 @@ public class DetailCommandeTest {
 		this.id = (long) 1;
 		this.commande = new Commande();
 		this.pizza = new Pizza();
-		this.detailCommande = new DetailCommande();
+		this.detailCommande = new DetailCommande(this.id, this.commande, this.pizza);
 	}
 	
 	

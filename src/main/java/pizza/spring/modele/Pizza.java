@@ -15,6 +15,22 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Pizza {
 
+	
+	
+	public Pizza() {
+		super();
+	}
+
+	public Pizza(Long id, String nom, int prix, boolean disponible, Categorie categorie, List<Ingredient> ingredients) {
+		super();
+		this.id = id;
+		this.nom = nom;
+		this.prix = prix;
+		this.disponible = disponible;
+		this.categorie = categorie;
+		this.ingredients = ingredients;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
