@@ -6,9 +6,5 @@ import org.junit.Test;
 
 public class PizzaServiceTest {
 
-	@Test
-	public void testGetListePizza() {
-		fail("Not yet implemented");
-	}
 
 }
