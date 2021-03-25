@@ -38,7 +38,7 @@ public class CommandeDao {
 		return em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", Commande.class)
 				 .getResultList();
 	}
-
+	//Ajout de commentaire
 	public void signalerCommandePrete(Long id) {
 		em.createQuery("update Commande c set c.enAttente = false where c.id = :id")
 		  .setParameter("id", id)
